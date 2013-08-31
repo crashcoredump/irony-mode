@@ -13,12 +13,12 @@
 #include "CodeCompletion.h"
 
 #include <algorithm>
+#include <cctype>
 #include <cstddef>
 #include <iostream>
 #include <sstream>
 #include <stdexcept>
 #include <string>
-
 #include "util/arraysize.hpp"
 
 #include "ClangString.h"

@@ -17,10 +17,12 @@
 # set(LibClang_DEFINITIONS ${PC_LibClang_CFLAGS_OTHER})
 
 find_path (LibClang_INCLUDE_DIR clang-c/Index.h
+  HINTS ${LIBCLANG_INCLUDE_PATH}
   # HINTS ${PC_LibClang_INCLUDEDIR} ${PC_LibClang_INCLUDE_DIRS}
   )
 
 find_library (LibClang_LIBRARY NAMES clang libclang
+  HINTS ${LIBCLANG_LIBRARY_PATH}
   # HINTS ${PC_LibClang_LIBDIR} ${PC_LibClang_LIBRARY_DIRS}
   PATHS
   /usr/lib/llvm                 # for *Arch?* Linux
